@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section__storage">
+      <div class="container">
+        <div class="storage__features">
+          <img src="images/logo.svg" alt="Fylo Logo" class="fylo__logo" />
+
+          <ul class="feature__list">
+            <li class="feature__list--item">
+              <img
+                src="images/icon-document.svg"
+                alt="Document Icon"
+                class="icon"
+              />
+            </li>
+            <li class="feature__list--item">
+              <img
+                src="images/icon-folder.svg"
+                alt="Folder Icon"
+                class="icon"
+              />
+            </li>
+            <li class="feature__list--item">
+              <img
+                src="images/icon-upload.svg"
+                alt="Upload Icon"
+                class="icon"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="storage__view">
+          <p class="storage__view--used">
+            You’ve used <span>815 GB</span> of your storage
+          </p>
+
+          <div class="storage__view--left">
+            <p>185 <span>GB left</span></p>
+          </div>
+          <div class="storage__view--progress">
+            <div class="progress">
+              <p>
+                &nbsp;
+                <span>&nbsp;</span>
+              </p>
+            </div>
+            <div class="progress__review">
+              <p class="storage__view-num">0 GB</p>
+              <p class="storage__view-num">1000 GB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/redstorm-hub">Abreham</a>.
+    </footer>
+  </body>
+</html>

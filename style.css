@@ -1,0 +1,272 @@
+:root {
+  --color--Pale-blue: hsl(243, 100%, 90%);
+  --color--Grayish-blue: hsl(229, 7%, 55%);
+  --color--Dark-blue: hsl(228, 56%, 26%);
+  --color--Very-dark-blue: hsl(229, 57%, 11%);
+  --color--Very-dark-blue-2: hsl(229, 57%, 19%);
+  --color--white: #fff;
+
+  --color--primary-gradient: linear-gradient(
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.section__storage {
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-color: var(--color--Very-dark-blue);
+  min-height: 100vh;
+
+  display: grid;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  width: 100%;
+
+  /* TEMP */
+  transform: translateY(-6rem);
+}
+
+.storage__features {
+  background-color: var(--color--Dark-blue);
+  padding: 3.2rem 4rem;
+  border-radius: 8px;
+  border-top-right-radius: 40%;
+  width: 21%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.fylo__logo {
+  width: 50%;
+}
+
+.feature__list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.feature__list--item {
+  list-style: none;
+  background-color: var(--color--Very-dark-blue);
+  border-radius: 8px;
+  width: 4rem;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storage__view {
+  align-self: flex-end;
+  background-color: var(--color--Dark-blue);
+  border-radius: 8px;
+  padding: 3.2rem 4rem;
+  height: 12rem;
+  width: 35%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.progress__review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.storage__view--used {
+  color: var(--color--Pale-blue);
+}
+
+.storage__view--used span {
+  color: var(--color--white);
+}
+
+.storage__view--left {
+  background-color: var(--color--white);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 85%, 0 85%);
+
+  padding: 1.8rem 2rem;
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
+
+  position: absolute;
+  top: -3.4rem;
+  right: 4.4rem;
+}
+
+.storage__view--left p {
+  color: var(--color--Very-dark-blue);
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.storage__view--left span {
+  color: var(--color--Grayish-blue);
+  font-size: 1.2rem;
+}
+
+.storage__view--progress {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.progress {
+  background-color: var(--color--Very-dark-blue-2);
+  height: 1.8rem;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.progress p {
+  background-image: var(--color--primary-gradient);
+  border-radius: 4rem;
+  width: 80%;
+
+  position: relative;
+}
+
+.progress span {
+  background-color: var(--color--white);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.storage__view-num {
+  color: var(--color--white);
+}
+
+.attribution {
+  background-color: var(--color--Very-dark-blue-2);
+  color: var(--color--white);
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(335, 100%, 65%);
+}
+
+/* 1200px */
+@media (max-width: 75em) {
+  .storage__features {
+    width: 27%;
+  }
+
+  .storage__view {
+    width: 45%;
+  }
+}
+
+/* 100px */
+@media (max-width: 62.5em) {
+  .storage__features {
+    width: 31%;
+  }
+
+  .storage__view {
+    width: 55%;
+  }
+}
+
+/* 800px */
+@media (max-width: 50em) {
+  .storage__features {
+    width: 32%;
+  }
+
+  .storage__view {
+    width: 63%;
+  }
+}
+
+/* 600px */
+@media (max-width: 37.5em) {
+  .section__storage {
+    background-image: url("./images/bg-mobile.png");
+    background-size: cover;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 7rem;
+  }
+
+  .storage__view {
+    height: 15rem;
+  }
+
+  .storage__features {
+    width: 100%;
+  }
+
+  .storage__view {
+    width: 100%;
+  }
+
+  .storage__view--left {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+
+    padding: 2rem;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 11rem;
+    left: 8rem;
+    right: 8rem;
+  }
+}
+
+/* 450px */
+@media (max-width: 28.2em) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
