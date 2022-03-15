@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/fylodatastoragecomponentmaster-Flp_Trcpg)
+- Live Site URL: [Add live site URL here](https://fylo-data-ab.netlify.app/)
 
 ## My process
 
@@ -36,5 +36,5 @@ Users should be able to:
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@redstorm-hub]https://www.frontendmentor.io/profile/redstorm-hub)
+- Frontend Mentor - [@redstorm-hub](https://www.frontendmentor.io/profile/redstorm-hub)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
